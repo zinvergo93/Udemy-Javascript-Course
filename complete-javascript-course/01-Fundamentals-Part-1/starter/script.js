@@ -105,7 +105,57 @@ const birthYear = 1993;
 
 // Assignment on let, const and var //
 
+/*
 let language = "English";
 const gender = "Male";
 const height = "5'10\"";
 let favoriteFood = "Hot wings";
+*/
+
+// ******************New Section******************** //
+
+//  Basic Operators //
+
+const now = 2038;
+const ageZac = now - 1993;
+const ageSarah = now - 1998;
+console.log("Zac is ", ageZac, "and Sarah is ", ageSarah);
+console.log(ageZac ** 2, ageZac * 4, ageZac / 5);
+
+const firstName = "Zac";
+const lastName = "Invergo";
+
+console.log(firstName + " " + lastName);
+
+//Assignment operators
+
+/*
+let x = 10 + 5;
+x += 10; // x = x + 10 ( now x = 25 )
+x *= 4; // x = x * 4 ( now x = 100 )
+x++; // x = x + 1 ( now x = 101 )
+x--; // x = x - 1 (now x = 100 )
+console.log(x);
+
+// Comparison operators
+console.log(ageZac > ageSarah); // true
+console.log(ageZac < ageSarah); // false
+// includes >, <, >=, <=
+console.log(ageSarah >= 40);
+*/
+
+// Assignment for Basic Operators
+
+/*
+let language = "English";
+let populationUS = 330;
+let halfPopulation = (populationUS / 2) * 10 ** 6;
+console.log(halfPopulation);
+console.log(populationUS + 1);
+let populationFinland = 6;
+console.log(populationUS > populationFinland);
+let avgPopulation = 33;
+console.log(populationUS > avgPopulation);
+let description = `The United states has a population of about ${populationUS} million, and speaks primarily ${language}`;
+console.log(description);
+*/
