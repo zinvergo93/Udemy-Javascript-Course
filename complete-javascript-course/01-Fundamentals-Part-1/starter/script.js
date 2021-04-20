@@ -116,6 +116,7 @@ let favoriteFood = "Hot wings";
 
 //  Basic Operators //
 
+// /*
 const now = 2038;
 const ageZac = now - 1993;
 const ageSarah = now - 1998;
@@ -124,8 +125,8 @@ console.log(ageZac ** 2, ageZac * 4, ageZac / 5);
 
 const firstName = "Zac";
 const lastName = "Invergo";
-
 console.log(firstName + " " + lastName);
+// */
 
 //Assignment operators
 
@@ -159,3 +160,19 @@ console.log(populationUS > avgPopulation);
 let description = `The United states has a population of about ${populationUS} million, and speaks primarily ${language}`;
 console.log(description);
 */
+
+// *******************New Section******************* //
+
+// Operator Precedence //
+
+/*
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+IN EXCESS OF PEMDAS
+*/
+let x, y;
+x = y = 25 - 10 - 5; // x = y = 10 // x = 10, y = 10
+console.log(x, y); // 10 10
+
+const averageAge = (ageZac + ageSarah) / 2;
+console.log(ageZac, ageSarah, averageAge);
