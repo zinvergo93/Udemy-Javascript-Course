@@ -179,7 +179,7 @@ const averageAge = (ageZac + ageSarah) / 2;
 console.log(ageZac, ageSarah, averageAge);
 */
 
-// *********************CODING CHALLENGE #1*********************** //
+// *********************CODING CHALLENGE #1 and #2*********************** //
 //  BMI = mass/height ** 2 = mass / (height * height) (mass in kg, height in m)
 
 // Test Data One //
@@ -260,4 +260,45 @@ console.log(`Multi
 line
 string 
 with back ticks`);
+*/
+
+//  ****************************New Section******************************** //
+
+// Taking Decisions: if/else Statements //
+
+/*
+const age = 13;
+const isOldEnough = age >= 16;
+console.log(isOldEnough);
+
+if (isOldEnough == true) {
+  console.log("They are old enough to drive 🚗🚙.");
+} else {
+  const yearsLeft = 16 - age;
+  console.log(
+    `They are not old enough to drive. They have ${yearsLeft} years until they can...`
+  );
+}
+
+*/
+// Windows + ".>" button to open up emoji list
+
+/*
+const birthYear = 2005;
+let century;
+if ((birthYear <= 2000) & (birthYear >= 1900)) {
+  let century = 20;
+  console.log(`You were born in the ${century}th century!`);
+} else if ((birthYear < 1900) & (birthYear >= 1800)) {
+  let century = 19;
+  console.log(
+    `You were born in the ${century}th century. Congrats on still being alive, I guess.`
+  );
+} else if (birthYear < 1800) {
+  console.log(`You're either lying or you're a vampire.`);
+} else {
+  let century = 21;
+  console.log(`You were born in the ${century}st century!`);
+}
+
 */
