@@ -302,3 +302,33 @@ if ((birthYear <= 2000) & (birthYear >= 1900)) {
 }
 
 */
+
+// ************************New Section*************************** //
+
+//  Type Conversion and Coercion //
+
+// Type Conversion - Manually converting from one type to another
+const inputYear = "1991";
+console.log(inputYear + 18);
+console.log(typeof inputYear);
+console.log(Number(inputYear) + 18); // converts inputYear to integer
+console.log(Number("Zac")); // returns NaN (invalid number/Not a Number)
+console.log(typeof NaN); // returns "number". NaN is a placeholder and is read as if it's a number despite being invalid.
+console.log(String(23), 23); // returns 23 as a string. Integer added for comparison.
+
+// Type Coercion - Javascript automatically converts behind the scenes
+console.log("I am " + 28 + " years old."); // converts everything to a string despite 23 being inputted as an integer
+console.log("23" - "10" - 3); // converts all to integers and returns 10
+console.log("23" * 2); // converts to integer and returns 46
+console.log("23" > "18"); // returns true
+//  + operator acts as concat when "adding" an integer to a string
+let n = "1" + 1; // "1" concatenates 1
+console.log(n); // returns "11" as a string
+n = n - 1; // n = "11" - 1; Converts "11" from string to integer for subtraction
+console.log(n); //returns 10
+
+z = 14 + "3";
+console.log(z); // returns "143". "3" concat to end of 14 since it's read left-to-right
+
+x = "10" - "4" - "3" - 2 + "5";
+console.log(x); // '10' - '4' >> ('6') - '3' >> ('3') - 2 >> (1) + '5' >> ("15") end result x = "15"
