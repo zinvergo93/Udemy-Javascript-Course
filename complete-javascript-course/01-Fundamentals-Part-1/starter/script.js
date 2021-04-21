@@ -92,10 +92,10 @@ console.log(typeof language);
 // let >>> used to declare a variable that can be changed later
 // const >>> used to declare a variable that *cannot* be changed later
 
-let age = 27;
-age = 28;
+// let age = 27;
+// age = 28;
 // age is now reassigned to 28
-const birthYear = 1993;
+// const birthYear = 1993;
 
 // birthYear = 1995
 // Will throw error in console
@@ -116,7 +116,7 @@ let favoriteFood = "Hot wings";
 
 //  Basic Operators //
 
-// /*
+/*
 const now = 2038;
 const ageZac = now - 1993;
 const ageSarah = now - 1998;
@@ -126,7 +126,7 @@ console.log(ageZac ** 2, ageZac * 4, ageZac / 5);
 const firstName = "Zac";
 const lastName = "Invergo";
 console.log(firstName + " " + lastName);
-// */
+*/
 
 //Assignment operators
 
@@ -170,17 +170,20 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Oper
 
 IN EXCESS OF PEMDAS
 */
+/*
 let x, y;
 x = y = 25 - 10 - 5; // x = y = 10 // x = 10, y = 10
 console.log(x, y); // 10 10
 
 const averageAge = (ageZac + ageSarah) / 2;
 console.log(ageZac, ageSarah, averageAge);
+*/
 
 // *********************CODING CHALLENGE #1*********************** //
 //  BMI = mass/height ** 2 = mass / (height * height) (mass in kg, height in m)
 
 // Test Data One //
+/*
 let markDataOne = {
   mass: 78,
   height: 1.69,
@@ -219,3 +222,42 @@ let markHigherBMITwo = markBMITwo > johnBMITwo;
 if (markHigherBMITwo == true) {
   console.log(true, "Mark has a higher BMI in test data 2");
 } else console.log(false, "John has a higher BMI in test data 2");
+*/
+
+//  ********************New Section********************** //
+
+// Strings and Template Literals //
+
+/*
+const firstName = "Zac";
+const job = "Programmer";
+const birthYear = 1993;
+const currentYear = 2037;
+
+const zac =
+  "I'm " +
+  firstName +
+  ", I am " +
+  (currentYear - birthYear) +
+  " years old and I work as a " +
+  job +
+  "!";
+console.log(zac);
+
+const zacNew = `I'm ${firstName}, I am ${
+  currentYear - birthYear
+} years old and I work as a ${job}!`;
+
+console.log(zacNew);
+console.log(`You don't need placeholders to use backticks`);
+
+console.log("String with \n\
+multiple \n\
+lines\n\
+no back ticks");
+
+console.log(`Multi
+line
+string 
+with back ticks`);
+*/
