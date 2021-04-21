@@ -176,3 +176,46 @@ console.log(x, y); // 10 10
 
 const averageAge = (ageZac + ageSarah) / 2;
 console.log(ageZac, ageSarah, averageAge);
+
+// *********************CODING CHALLENGE #1*********************** //
+//  BMI = mass/height ** 2 = mass / (height * height) (mass in kg, height in m)
+
+// Test Data One //
+let markDataOne = {
+  mass: 78,
+  height: 1.69,
+};
+
+let johnDataOne = {
+  mass: 92,
+  height: 1.95,
+};
+
+let markBMIOne = markDataOne.mass / markDataOne.height ** 2;
+let johnBMIOne = johnDataOne.mass / johnDataOne.height ** 2;
+
+let markHigherBMIOne = markBMIOne > johnBMIOne;
+
+if (markHigherBMIOne == true) {
+  console.log(true, "Mark has a higher BMI in test data 1");
+} else console.log(false, "John has a higher BMI in test data 2");
+
+// Test Data Two //
+let markDataTwo = {
+  mass: 95,
+  height: 1.88,
+};
+
+let johnDataTwo = {
+  mass: 85,
+  height: 1.76,
+};
+
+let markBMITwo = markDataTwo.mass / markDataTwo.height ** 2;
+let johnBMITwo = johnDataTwo.mass / johnDataTwo.height ** 2;
+
+let markHigherBMITwo = markBMITwo > johnBMITwo;
+
+if (markHigherBMITwo == true) {
+  console.log(true, "Mark has a higher BMI in test data 2");
+} else console.log(false, "John has a higher BMI in test data 2");
